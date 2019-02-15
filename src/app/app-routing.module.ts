@@ -8,6 +8,7 @@ import { ItemComponent } from './Pages/item/item.component';
 
 const app_routes: Routes = [
 
+  { path: '', component:   PortafolioComponent},
 	{ path: 'Inicio', component: 	PortafolioComponent},
 	{ path: 'sobremi', component: 	AboutComponent},
 	{ path: 'proyectos', component: 	ItemComponent},
