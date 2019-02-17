@@ -24,7 +24,9 @@ cargando = true;
 
     console.log(resp); 
 	this.productos = resp;
-  
-  this.cargando = false; // Aca deja de cargar cuando se tiene respuesta
+  setTimeout(() => {
+    this.cargando = false; // Aca deja de cargar cuando se tiene respuesta
+  }, 2000);
+ 
   });
 }}
