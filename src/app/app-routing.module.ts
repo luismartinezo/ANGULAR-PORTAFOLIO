@@ -11,7 +11,7 @@ const app_routes: Routes = [
   { path: '', component:   PortafolioComponent},
 	{ path: 'Inicio', component: 	PortafolioComponent},
 	{ path: 'sobremi', component: 	AboutComponent},
-	{ path: 'proyectos', component: 	ItemComponent},
+	{ path: 'proyectos/:id', component: 	ItemComponent},
 	{ path: '**', pathMatch:'full', redirectTo:''}
 ];
 

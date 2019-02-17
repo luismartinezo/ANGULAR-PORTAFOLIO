@@ -26,7 +26,13 @@ cargando = true;
 	this.productos = resp;
   setTimeout(() => {
     this.cargando = false; // Aca deja de cargar cuando se tiene respuesta
-  }, 2000);
+          }, 2000);
  
-  });
-}}
+     });
+  }
+
+  getProducto( id: string){
+    return this.http.get(`https://angular-portafolio-7bd6d.firebaseio.com/productos/${ id }.json`);
+  }
+
+}
