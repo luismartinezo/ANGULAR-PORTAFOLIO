@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './Shared/header/header.component';
-import { FooterComponent } from './Shared/footer/footer.component';
-import { PortafolioComponent } from './Pages/portafolio/portafolio.component';
-import { AboutComponent } from './Pages/about/about.component';
-import { ItemComponent } from './Pages/item/item.component';
+// Rutas
 import { AppRoutingModule } from './app-routing.module';
+
+
+
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ItemComponent } from './pages/item/item.component';
 import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
@@ -24,7 +29,7 @@ import { SearchComponent } from './pages/search/search.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

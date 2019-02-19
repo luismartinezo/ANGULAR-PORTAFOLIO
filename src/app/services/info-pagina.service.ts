@@ -7,37 +7,43 @@ import { InfoPagina } from '../interfaces/info-pagina.interface';
 })
 export class InfoPaginaService {
 
-	info: InfoPagina = {};
-	cargada = false;
+  info: InfoPagina = {};
+  cargada = false;
 
-	equipo: any[] =[];
+  equipo: any[] = [];
 
-  constructor( private http: HttpClient) { 
+  constructor( private http: HttpClient ) {
 
-		this.cargarInfo();
-		this.cargarEquipo();
+    this.cargarInfo();
+    this.cargarEquipo();
 
-	}
-	
-	private cargarInfo(){
-		// Leer el archivo JSON
-  	this.http.get('assets/data/data-pagina.json')
-  	.subscribe( (resp: InfoPagina) =>{
+  }
 
-  		this.cargada = true;
-  		this.info = resp;
-  		console.log(resp); //Aqui mostramos todos
-			//console.log(resp['email']); // Aca mostramos uno en particular
-		});
-	}
-	private cargarEquipo(){
-// Leer el archivo JSON
-this.http.get('https://angular-portafolio-7bd6d.firebaseio.com/equipo.json')
-.subscribe( (resp: any[]) => {
-	this.equipo = resp;
-	console.log(resp); 
-	
-});
+  private cargarInfo() {
+    // Leer el archivo JSON
+    this.http.get('assets/data/data-pagina.json')
+    .subscribe( (resp: InfoPagina) => {
+      this.cargada = true;
+      this.info = resp;
+    });
+  }
 
-	}
+
+  private cargarEquipo() {
+
+    // Leer el archivo JSON
+    this.http.get('https://angular-portafolio-7bd6d.firebaseio.com/equipo.json')
+    .subscribe( (resp: any[]) => {
+
+      this.equipo = resp;
+      // console.log(resp);
+    });
+
+
+    // this.equipo = resp
+  }
+
 }
+
+
+

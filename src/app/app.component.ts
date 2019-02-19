@@ -8,12 +8,10 @@ import { ProductosService } from './services/productos.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'portafolio';
 
-  // Aca inyectamos los productos ya que este archivo es global
   constructor( public infoPaginaService: InfoPaginaService,
-               public productoService: ProductosService){
-
+               public productosService: ProductosService ) {
 
   }
+
 }
