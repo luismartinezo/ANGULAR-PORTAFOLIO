@@ -1,27 +1,28 @@
-# Portafolio en Angular con Plantilla bootstrap
+# Ejemplo de Portafolio en Angular con Plantilla bootstrap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+Este proyecto es generado con [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+Se utiliza una plantilla free Botstrap para crear una aplicacion de una sola pagina por medio de componentes y captura de informacion por medio de json.
 
-## Development server
+## Servidor de Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Correr `ng serve` para un servidor de desarrollo. Navega hasta `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen.
 
-## Code scaffolding
+## Generacion de Código
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta `ng generar componente nombre-componente` para generar un nuevo componente. También puede usar `ng genera la directiva | pipe | service | class | guard | interface | enum | module` para otras funciones.
 
-## Build
+## Construccion para produccion
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ejecuta `ng build` para construir el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist /`. Use la bandera `--prod` para una compilación de producción.
 
-## Running unit tests
+## Ejecución de pruebas unitarias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma] (https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Ejecutando pruebas de extremo a extremo
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Ejecute `ng e2e` para ejecutar las pruebas de extremo a extremo a través de [Protractor] (http://www.protractortest.org/).
 
-## Further help
+## Ayuda adicional
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obtener más ayuda sobre Angular CLI, use `ng help` o visite el [Angular CLI README] (https://github.com/angular/angular-cli/blob/master/README.md).
